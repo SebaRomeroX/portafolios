@@ -7,8 +7,13 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
+   --cor-de-fundo: #5b88a5;
    --cor-de-link: #000;
+   --cor-2: #d4cdc5;
+   --cor-3: #f4f4f2;
+   --cor-4: #191013;
+   --cor-5: #243a69;
+
 }
 
 body {
@@ -21,10 +26,19 @@ body {
 }
 ol, ul,li {
     list-style: none;
+    
 }
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+h2{
+    font-size:xx-large;
+}
+
+h3{
+    font-size:x-large;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -41,50 +55,211 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
 
+section.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    width: 70%;
+    
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /*Sección Title*/
-
 section.title{
-
+    width: 100%;
+    
 }
+
+div.title__div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+.title__profile{
+    width: 350px;
+    border-radius: 50%;
+}
+
+.title__container{
+    margin-left: 30px;
+}
+
+.title__network{
+    margin-top: 50px;
+}
+
+.title__network__item{
+    margin: 20px;
+}
+
 
 /*Sección About*/
 
 section.about{
-
+    padding: 30px;
+    background-color: #7ae2ff;
 }
 
 /*Sección Hobbies*/
 
+section.skills{
+    padding: 30px;
+}
+
 section.hobbies{
-    
+    padding: 30px;
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    padding: 30px;
+}
+.academic__courses{
+    display: flex;
+    flex-direction: row;
 }
 
 /* experiencia*/
 
 section.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .experience__box{
+    display: flex;
+    margin:20px 30px 80px 20px;
+ }
 
+ .experience__info{
+    margin: 20px;
+ }
+
+.experiencia__botao--repo, .experience__botao--demo, .formcontato__botao{
+    color: white;        
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    margin: 10px;
+
+    width: 105px;
+    height: 51px;
+
+    background: #2A7AE4;
+    border: none;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.experiencia__botao--repo:hover, .experience__botao--demo:hover, .formcontato__botao:hover{
+    background: #1d5399;
+    cursor: pointer;
 }
 
 /*Contacto*/
 
-section.formcontato{
-
+.formcontato__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+.formcontato__img{
+    width: 200px;
+}
+.input-container{
+    width: 100%;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+
+    width: 656px;
+    height: 656px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    margin: 0px 30px 0px 30px;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    width: 656px;
+    height: 450px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+}
+
+.formcontato__input{
+    height: 40px;
+    width: 100%;
+
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+}
+
+.formcontato__textarea{
+    width: 100%;
+}
+
+.input-message-error{
+    color: red;
+}
 /*footeer*/
 
 section.footer{
-   
+    margin-top: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #7ae2ff;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
