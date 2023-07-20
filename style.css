@@ -1,12 +1,6 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+                                                                    /*General*/
 
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #5ea6d6;
    --cor-de-link: #000;
    --cor-2: #d3d3d3;
@@ -15,6 +9,9 @@ coloque nas sessões indicadas*/
    --cor-5: #002470;
 
 }
+
+@media all and (min-width:1px){
+    
 
 body {
     box-sizing: border-box;
@@ -39,21 +36,13 @@ h2{
 
 h3{
     font-size:x-large;
+}    
+
+
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sección Menu*/
+                                                                            /*Sección Menu*/
 
 
 section.menu{
@@ -90,7 +79,7 @@ nav{
     justify-content: space-around;
 }
 
-/*Sección Title*/
+                                                                            /*Sección Title*/
 section.title{
     width: 100%;
     
@@ -125,7 +114,7 @@ div.title__div{
 }
 
 
-/*Sección About*/
+                                                        /*Sección About*/
 
 section.about{
     padding: 30px;
@@ -135,7 +124,7 @@ section.about{
     margin: 80px 0px 80px 0px;
 }
 
-/*Sección Hobbies*/
+                                                    /*Sección Hobbies*/
 
 section.skills{
     padding: 30px;
@@ -169,7 +158,7 @@ section.hobbies{
     justify-content: space-around;
 }
 
-/* Experiencia Académica*/
+                                                        /* Experiencia Académica*/
 
 section.academic{
     padding: 30px;
@@ -181,14 +170,14 @@ section.academic{
 }
 .academic__courses{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .academic__courses__box{
-    margin-left: 120px;
+    margin: 1em 4em;
 }
 
-/* experiencia*/
+                                                                /* experiencia*/
 
 section.experience{
     display: flex;
@@ -243,7 +232,7 @@ section.experience{
     cursor: pointer;
 }
 
-/*Contacto*/
+                                                                    /*Contacto*/
 
 .formcontato{
     padding: 40px;
@@ -318,6 +307,7 @@ section.experience{
 
 .formcontato__textarea{
     width: 100%;
+    resize: none;
 }
 
 .formcontato__botao{
@@ -327,7 +317,7 @@ section.experience{
 .input-message-error{
     color: red;
 }
-/*footeer*/
+                                                        /*footeer*/
 
 section.footer{
     margin-top: 80px;
@@ -344,7 +334,8 @@ section.footer{
 Utiliza las referencias de los breakpoints @media abajo */
 
 
-/*Tablet*/
+                                                                /*Tablet*/
+
 @media (max-width: 768px) {
 
 .menu__title{
@@ -401,7 +392,8 @@ nav{
 
 }
 
-/*Mobile*/
+                                                                /*Mobile*/
+
 @media (max-width: 375px) {
 
 section.menu{
