@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
+
+    <!-- estilos -->
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/code-slash.svg" type="image/x-icon">
+
+    <title>Sebastian Romero Dev</title>
 </head>
 <body>
     <!-- Sección del Menú  -->
@@ -22,10 +26,9 @@
         <nav>
             <ul class="menu__list">
                 <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -36,18 +39,19 @@
         <div class="title__div">
             <img class="title__profile" src="./assets/profile.jpg">
             <div class="title__container">
-                <h2 class="title__bio">Hola, soy Seba Romero y desarrollo paginas web</h2>
-                <h3 class="title__subsection">Estudiante de programacion.29 años. Argentino<br> 
-                    Formado en Html 5, JavaScript, CSS 3 y React. Orientado a diseño web y Front End.
-                    Recibí formacion en el proyecto Oracle ONE en Alura Latam.
-                    Actualmente estoy cursando la carrera de Programador Universitario en la Universidad Nacional de Tucuman.</h3>
+                <h2 class="title__bio">Hola, soy Seba Romero desarrollador web</h2>
+                <h3 class="title__subsection"> 
+                    Formado en Html 5, JavaScript, CSS 3 y React Js. Me especializo a diseño web y desarrollo FrontEnd.
+                </h3>
                 <ul class="title__network">
 
-                    <li class="title__network__item"><a href="mailto:sebaromero.luthier@gmail.com">Email<img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://github.com/SebaRomeroX">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/sebastian-romero-35235825a/">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/mr_pucho">Instagram <img src="assets\arrow.png"></a></li>
-                    
+                    <li class="title__network__item"><a href="mailto:sebaromero.luthier@gmail.com">Email <img src="assets\arrow.png" class="icono"> </a></li>
+                    <li class="title__network__item"><a href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
+                      Github <img src="assets\arrow.png" class="icono"> </a>
+                    </li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/sebastian-alejandro-romero/" target="_blank" rel="noopener noreferer">
+                        Linkedin <img src="assets\arrow.png" class="icono"></a>
+                    </li>                    
                 </ul>
             </div>
         </div>
@@ -57,21 +61,11 @@
     <section class="about" id="sobre-mi">
         <div class="about__container">
             <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Soy originario de Tucuman Argentina, fui criado por mi madre a quien le debo todo lo que soy.<br>
-                    Estudie en una escuela tecnica de la que me gradue de Tecnico Electro-Mecanico.<br>
-                    Estudie lutheria y tengo conocimientos basicos en arte, musica y psicologia.</p>
-            <p class="about__paragraph">Realize diversos cursos de programacion en las plataformas de Platzi y Alura. <br>
-                En la actualidad me encuentro cursando la carrera de Programador Universitario en la Universidad Nacional de Tucuman.<br>
+            <p class="about__paragraph">Recibí formacion en el proyecto Oracle ONE en Alura Latam.<br>
+                Tambien me encuentro cursando la carrera de Programador Universitario en la Universidad Nacional de Tucuman.<br>
             </p>
-            <p class="about__paragraph">Actualmente busco crecer mi conocimiento y capacidades.<br>
-                    Busco oportunidades para ganar experiencia en el desarrollo de software.
-                    </p>
-
-            <p class="about__paragraph">
-                    Se trabajar en equipo, comunicarme y disfruto enseñar y aprender.<br>
-                    Me considero una persona honesta, comprometida y creativa, valoro la eficiencia y la responsabilidad.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            
+            <p class="about__paragraph">Actualmente busco oportunidades para crecer, aprender y aportar mi vision y capacidades en proyectos de desarrollo Web.
+            </p>            
         </div>
     </section>
 
@@ -81,165 +75,41 @@
             <div class="skills__line">
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
+                        <li class="skills__img"><img src="assets\htlm.png" class="logo"></li>
                         <li class="skills__name"> HTML 5</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
+                        <li class="skills__img"> <img src="assets\js_icon.png" class="logo"></li>
                         <li class="skills__name">Javascript</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
+                        <li class="skills__img"><img src="assets\nodejs_icon.png" class="logo"></li>
                         <li class="skills__name">Node JS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\css_icon.png" class="logo"> </li>
                         <li class="skills__name">CSS</li>
                     </ul>
                 </div>
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets/react_icon.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets/react_icon.png" class="logo"> </li>
                         <li class="skills__name">React</li>
                     </ul>
                 </div>
         </div>
     </section>
 
-    <section class="skills" id="soft-skills">
-        <h3 class="skills__title">Soft Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Resolucion de problemas</strong></li>
-                        <li class="skills__name">Analisis objetivo y solucion eficiente</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Comunicacion clara</strong></li>
-                        <li class="skills__name">Escucha activa</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Creatividad</strong></li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Colaborativo</strong></li>
-                        <li class="skills__name">Trabajo en equipo</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Adaptabilidad</strong></li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__name"><strong>Detallista</strong></li>
-                    </ul>
-                </div>
-            </div>
-            
-    </section>
 
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Peliculas</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cocinar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\tv_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Juegos</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-        <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-        <div class="academic__courses">
-            
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item__img"><img src="assets/escuela.png"></li>
-                    <li class="academic__courses__item__title"><h4>Tecnico Electro-Mecanico</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2011. Escuela Tecnica N°1 de Monteros</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Fundamentos de Programacion</h4></li>
-                    <li class="academic__courses__item__title"><h4>Diseño Front End</h4></li>
-                    <li class="academic__courses__item__title"><h4>Programacion con React</h4></li>
-                    <li class="academic__courses__item__title"><h4>Fundamentos de MySQL</h4></li>
-                    <li class="academic__courses__item__title"><h4>Manejo de GitHub</h4></li>
-                    <li class="academic__courses__item__title"><h4>Formación en Desarrollo Personal</h4></li>
-                    <li class="academic__courses__item__title"><h4>Habilidades para el mercado moderno</h4></li>
-                    <li class="academic__courses__item__title"><h4>Formación en  Business Agility</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2022 - 2023. Alura</p></li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item__img"><img src="assets/platzi.png"></li>
-                    <li class="academic__courses__item__title"><h4>Programacion basica</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2022.  Platzi</p></li>
-                </ul>
-            </div>
-            
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <li class="academic__courses__item__img"><img src="assets/facet.png"></li>
-                    <li class="academic__courses__item__title"><h4>Diseño web</h4></li>
-                    <li class="academic__courses__item__title"><h4>WordPress</h4></li>
-                    <li class="academic__courses__item__title"><h4>Computacion y Logica</h4></li>
-
-                    <li class="academic__courses__item__subtitle"><p>2023. Facultad de Ciencias Exactas UNT</p></li>
-                </ul>
-            </div>
-            
-        </div>
-    </section>
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
@@ -274,52 +144,91 @@
             </div>
             <img class="experience__img" src="./assets/carrera.png">
         </div>  
+    </section>
 
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="./assets/phone-icon.jpg">
+
+    <!-- Sección de Formación académica -->
+    <section class="academic" id="formacion">
+                <h2 class="academic__title" >Formación académica</h2>
+                <div class="academic__courses">
+                    
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img src="assets/escuela.png"></li>
+                            <li class="academic__courses__item__title"><h4>Tecnico Electro-Mecanico</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>2011. Escuela Tecnica N°1 de Monteros</p></li>
+                        </ul>
+                    </div>
+        
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <!--Pon el logotipo de la institución de formación -->
+                            <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
+                            <li class="academic__courses__item__title"><h4>Fundamentos de Programacion</h4></li>
+                            <li class="academic__courses__item__title"><h4>Diseño Front End</h4></li>
+                            <li class="academic__courses__item__title"><h4>Programacion con React</h4></li>
+                            <li class="academic__courses__item__title"><h4>Fundamentos de MySQL</h4></li>
+                            <li class="academic__courses__item__title"><h4>Manejo de GitHub</h4></li>
+                            <li class="academic__courses__item__title"><h4>Formación en Desarrollo Personal</h4></li>
+                            <li class="academic__courses__item__title"><h4>Habilidades para el mercado moderno</h4></li>
+                            <li class="academic__courses__item__title"><h4>Formación en  Business Agility</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>2022 - 2023. Alura</p></li>
+                        </ul>
+                    </div>
+        
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img src="assets/platzi.png"></li>
+                            <li class="academic__courses__item__title"><h4>Programacion basica</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>2022.  Platzi</p></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img src="assets/facet.png"></li>
+                            <li class="academic__courses__item__title"><h4>Diseño web</h4></li>
+                            <li class="academic__courses__item__title"><h4>WordPress</h4></li>
+                            <li class="academic__courses__item__title"><h4>Computacion y Logica</h4></li>
+        
+                            <li class="academic__courses__item__subtitle"><p>2023. Facultad de Ciencias Exactas UNT</p></li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">Para contactarme</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form" action="mailto:sebaromero.luthier@gmail.com" method="post">
-                        <div class="input-container">
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required data-tipo="nombre"  maxlength="50">
-                            <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail" required data-tipo="email">
-                        <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto"  maxlength="50">
-                        <span class="input-message-error"></span>
-                        </div>
-                        <div class="input-container">
-                            <textarea class="formcontato__textarea" rows="7"  id="mensagem" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje" 
-                             maxlength="600">
-                                
-                            </textarea>
-                        <span class="input-message-error"></span>
-                        </div>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
+    </section>
+
+
+    <!-- Sección de Contacto -->
+    <section class="formcontato" id="contacto">
+        <div  class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="./assets/phone-icon.jpg">
             </div>
-        </section>
+            <div class="formcontato__text">
+                <h2 class="formcontato__title">Contacto</h2>
+                <h3 class="formcontato__subtext">Para contactarme</h3>
 
-        <!-- Sección de Footer -->
-        <section class="footer">
+                <ul class="title__network">
+
+                    <li class="title__network__item"><a href="mailto:sebaromero.luthier@gmail.com">Email <img src="assets\arrow.png" class="icono"> </a></li>
+                    <li class="title__network__item"><a href="https://github.com/SebaRomeroX">Github <img src="assets\arrow.png" class="icono"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/sebastian-romero-35235825a/">Linkedin 
+                        <img src="assets\arrow.png" class="icono"></a></li>                    
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Footer -->
+    <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Sebastian A. Romero</p>
-                <p>2023</p>
+                <p>Desarrollado por Sebastian A. Romero (2023) &#169;</p>
             </div>
-        </section>
+    </section>
+
+
     </div>
- <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
 </body>
 </html>
