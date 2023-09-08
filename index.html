@@ -2,233 +2,181 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Porfolio">
+    <meta name="author" content="Sebastian Alejandro Romero">
 
-    <!-- estilos -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Quicksand&family=Roboto&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 
     <link rel="shortcut icon" href="img/code-slash.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
 
     <title>Sebastian Romero Dev</title>
 </head>
 <body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-    <section class="menu">
-        <header class="menu__header">
-            <h2 class="menu__title">Sebastian A. Romero </h2>
-        </header>
+    <section class="titulo">
+        <h1>Sebastian A. Romero</h1>
+
         <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mi</a> </li>
+                <li><a href="#mis-proyectos">Proyectos</a></li>
+                <li><a href="#formacion-academica">Formacion</a></li>
+                <li><a href="#info-contacto">Contacto</a></li>
             </ul>
         </nav>
     </section>
 
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="./assets/profile.jpg">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, soy Seba Romero desarrollador web</h2>
-                <h3 class="title__subsection"> 
-                    Formado en Html 5, JavaScript, CSS 3 y React Js. Me especializo a diseño web y desarrollo FrontEnd.
-                </h3>
-                <ul class="title__network">
-
-                    <li class="title__network__item"><a href="mailto:sebaromero.luthier@gmail.com">Email <img src="assets\arrow.png" class="icono"> </a></li>
-                    <li class="title__network__item"><a href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
-                      Github <img src="assets\arrow.png" class="icono"> </a>
-                    </li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/sebastian-alejandro-romero/" target="_blank" rel="noopener noreferer">
-                        Linkedin <img src="assets\arrow.png" class="icono"></a>
-                    </li>                    
-                </ul>
-            </div>
-        </div>
+    <section class="presentacion">
+        <img src="img/foto_perfil.jpg" alt="hombre joven, cabello y barba oscuros, sonriendo." >
+        <section class="titulos">
+            <h2>Desarrollador Web</h2>
+            <h3>Front End</h3>
+            <h3>Diseño UX/UI</h3>
+            <h3>HTML & CSS</h3>
+            <h3>JavaScript</h3>
+            <h3>React Js</h3>    
+            <section class="redes">
+                <a href="mailto:sebaromero.luthier@gmail.com">Email</a>
+                <a href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">GitHub</a>
+                <a href="https://www.linkedin.com/in/sebastian-alejandro-romero" target="_blank" rel="noopener noreferer">Linkedin</a>
+                <a href="docs/Sebastian A. Romero-CV.pdf" target="_blank">Curriculum</a>
+            </section>
+        </section>
+        
+        
     </section>
     
-    <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Recibí formacion en el proyecto Oracle ONE en Alura Latam.<br>
-                Tambien me encuentro cursando la carrera de Programador Universitario en la Universidad Nacional de Tucuman.<br>
-            </p>
-            <p class="about__paragraph">Actualmente busco oportunidades para crecer, aprender y aportar mi vision y capacidades en proyectos de desarrollo Web.
-            </p>            
-        </div>
+    <section id="sobre-mi" class="about">
+        <h2>Sobre Mi</h2>
+        <p>Recibí formacion en el proyecto Oracle ONE en Alura Latam. <br>
+            Tambien me encuentro cursando la carrera de Programador Universitario en la Universidad Nacional de Tucuman.<br>
+            Actualmente trabajo con un equipo en el desarrollo de un Proyecto StartUp.<br>
+            Busco oportunidades para ganar experiencia y aportar mis capacidades en el desarrollo de software.
+        </p>
     </section>
 
-    <!-- Sección de Skills -->
-    <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png" class="logo"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
+    <section id="mis-proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <section class="proyecto">
+            <section class="info">
+                <h3>Tablero de Tareas</h3>
+                <p>Anota tus tareas pendientes</p>
+            </section>
+            <img src="img/tablero_tareas.png" alt="">
+            <section class="botones">
+                <a href="https://github.com/SebaRomeroX/taskmaster" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
+                <a href="https://sebaromerox.github.io/taskmaster/" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+            </section>
+        </section>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" class="logo"></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" class="logo"></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" class="logo"> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets/react_icon.png" class="logo"> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-
-
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profesional</h2>
-
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <div class="experience__info">
-                <h2 class="experience__title">Tablero de Tareas</h2>
-                <h3 class="experience__text">Anota tus tareas pendientes</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/SebaRomeroX/taskmaster">
-                                <button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://sebaromerox.github.io/taskmaster/">
-                                <button class="experience__botao--demo">Pagina</button></a></span>
-                    </div>
-            </div>
-            <img class="experience__img" src="./assets/tablero_tareas.png">
-        </div>  
-
-        <div class="experience__box">
-            <div class="experience__info">
-                <h2 class="experience__title">La Carrera de los Muñelocos</h2>
-                <h3 class="experience__text">Juego de carrera sencillo</h3>
-                    <div class="experience__description">
-                            <span class="experience__repo"><a href="https://github.com/SebaRomeroX/carreralocos.github.io">
-                                <button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://sebaromerox.github.io/carreralocos.github.io/">
-                                <button class="experience__botao--demo">Pagina</button></a></span>
-                    </div>
-            </div>
-            <img class="experience__img" src="./assets/carrera.png">
-        </div>  
-    </section>
-
-
-    <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-                <h2 class="academic__title" >Formación académica</h2>
-                <div class="academic__courses">
-                    
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="assets/escuela.png"></li>
-                            <li class="academic__courses__item__title"><h4>Tecnico Electro-Mecanico</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2011. Escuela Tecnica N°1 de Monteros</p></li>
-                        </ul>
-                    </div>
+        <section class="proyecto">
+            <section class="info">
+                <h3>Carrea de Muñelocos</h3>
+                <p>Pequeño juego de carreras</p>
+            </section>
+            <img src="img/carrera.png" alt="">
+            <section class="botones">
+                <a href="https://github.com/SebaRomeroX/carreralocos.github.io" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
+                <a href="https://sebaromerox.github.io/carreralocos.github.io/" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+            </section>
+        </section>
         
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <!--Pon el logotipo de la institución de formación -->
-                            <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                            <li class="academic__courses__item__title"><h4>Fundamentos de Programacion</h4></li>
-                            <li class="academic__courses__item__title"><h4>Diseño Front End</h4></li>
-                            <li class="academic__courses__item__title"><h4>Programacion con React</h4></li>
-                            <li class="academic__courses__item__title"><h4>Fundamentos de MySQL</h4></li>
-                            <li class="academic__courses__item__title"><h4>Manejo de GitHub</h4></li>
-                            <li class="academic__courses__item__title"><h4>Formación en Desarrollo Personal</h4></li>
-                            <li class="academic__courses__item__title"><h4>Habilidades para el mercado moderno</h4></li>
-                            <li class="academic__courses__item__title"><h4>Formación en  Business Agility</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2022 - 2023. Alura</p></li>
-                        </ul>
-                    </div>
-        
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="assets/platzi.png"></li>
-                            <li class="academic__courses__item__title"><h4>Programacion basica</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2022.  Platzi</p></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="academic__courses__box">
-                        <ul class="academic__courses__list">
-                            <li class="academic__courses__item__img"><img src="assets/facet.png"></li>
-                            <li class="academic__courses__item__title"><h4>Diseño web</h4></li>
-                            <li class="academic__courses__item__title"><h4>WordPress</h4></li>
-                            <li class="academic__courses__item__title"><h4>Computacion y Logica</h4></li>
-        
-                            <li class="academic__courses__item__subtitle"><p>2023. Facultad de Ciencias Exactas UNT</p></li>
-                        </ul>
-                    </div>
-                    
-                </div>
+
     </section>
 
+    <section class="skills">
+        <h2>Skills</h2>
+        <section class="lista">
+            <h4>HTML & CSS</h4>
+            <h4>JavaScript</h4>
+            <h4>Python</h4>
+            <h4>C#</h4>
 
-    <!-- Sección de Contacto -->
-    <section class="formcontato" id="contacto">
-        <div  class="formcontato__contacto">
-            <div class="formcontato--esquerda">
-                <img class="formcontato__img" src="./assets/phone-icon.jpg">
-            </div>
-            <div class="formcontato__text">
-                <h2 class="formcontato__title">Contacto</h2>
-                <h3 class="formcontato__subtext">Para contactarme</h3>
+            <h4>WordPress</h4>
 
-                <ul class="title__network">
+            <h4>Node Js</h4>
+            <h4>MySQL</h4>
 
-                    <li class="title__network__item"><a href="mailto:sebaromero.luthier@gmail.com">Email <img src="assets\arrow.png" class="icono"> </a></li>
-                    <li class="title__network__item"><a href="https://github.com/SebaRomeroX">Github <img src="assets\arrow.png" class="icono"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/sebastian-romero-35235825a/">Linkedin 
-                        <img src="assets\arrow.png" class="icono"></a></li>                    
-                </ul>
-                
-            </div>
-        </div>
+            <h4>React Js</h4>
+            <h4>Blazor</h4>
+
+            <h4>Git & GitHub</h4>
+            <h4>Figma</h4>
+        </section>
+        
     </section>
 
-    <!-- Sección de Footer -->
+    <section id="formacion-academica" class="formacion">
+        <h2>Formacion</h2>
+        <section class="tarjetas">
+            <section class="tarjeta">
+                <img src="img/alura_logo.jpg" alt="">
+                <h4>Fundamentos de Programacion</h4>
+                <h4>Desarrollo Front End</h4>
+                <h4>Programacion con React</h4>
+                <h4>Fundamentos de MySQL</h4>
+                <h4>Manejo de GitHub</h4>
+                <h4>Formación en Desarrollo Personal</h4>
+                <h4>Habilidades para el mercado moderno</h4>
+                <h4>Formación en  Business Agility</h4>
+                <p>2022 - 2023. Alura</p>
+            </section>
+
+            <section class="tarjeta">
+                <img src="img/platzi.png" alt="">
+                <h4>Programacion basica</h4>
+                <p>2022.  Platzi</p>
+            </section>
+
+            <section class="tarjeta">
+                <img src="img/facet.png" alt="">
+                <h4>Desarrollo web</h4>
+                <h4>Fundamentos de WordPress</h4>
+                <h4>Logica de Programacion</h4>
+                <p>2023 - Actualidad. Facultad de Ciencias Exactas UNT</p>
+            </section>
+
+        </section>
+        
+    </section>
+
+    <section id="info-contacto" class="contacto">
+        <h2>Contacto</h2>
+        <h4>Contactame para trabajar en un proyecto juntos</h4>
+        <section class="redes">
+            <a href="mailto:sebaromero.luthier@gmail.com">
+                <i class="bi bi-envelope-at-fill"></i>
+                <p>sebaromero.luthier@gmail.com</p>
+            </a>
+            <a href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
+                <i class="bi bi-github"></i>
+                <p>SebaRomeroX</p>
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-alejandro-romero" target="_blank" rel="noopener noreferer">
+                <i class="bi bi-linkedin"></i>
+                <p>sebastian-alejandro-romero</p>
+            </a>
+            <a href="docs/Sebastian A. Romero-CV.pdf" download>
+                <i class="bi bi-file-earmark-person-fill"></i>
+                <p>Descargar Curriculum</p>
+            </a>
+        </section>
+    </section>
+
     <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por Sebastian A. Romero (2023) &#169;</p>
-            </div>
+        <p>Desarrollado por Sebastian A. Romero (2023) &#169;</p>
     </section>
 
-
-    </div>
 </body>
 </html>
