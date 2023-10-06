@@ -208,7 +208,24 @@ ul{
     border: 2px solid var(--claro1);
 }
 
-                /*       PROYECTOS     */
+/*  CAROUSEL  */
+.carousel-inner{
+    width: 80%;
+    margin: auto;
+}
+.carousel-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-carousel{
+    width: 100%;
+}
+.link-carousel{
+    margin: 1em;
+}
+
+                /*       SKILLS     */
 
 .skills{
     flex-direction: column;
@@ -236,7 +253,7 @@ ul{
     margin: 1em;
 }
 
-                /*       PROYECTOS     */
+                /*       FORMACION     */
 
 .formacion {
     flex-direction: column;
