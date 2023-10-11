@@ -24,28 +24,37 @@
     <title>Sebastian Romero Dev</title>
 </head>
 <body>
-    <section id="inicio" class="titulo">
-        <h1>Sebastian A. Romero</h1>
+    <section id="inicio" class="menu">
+        <h1>Seba Romero</h1>
 
-        <nav>
-            <ul>
+        
+        <a href="#inicio" id="abrir"><i class="bi bi-list" ></i></a>
+
+        <nav id="enlaces">
+            
                 <li><a href="#sobre-mi">Sobre mi</a> </li>
                 <li><a href="#mis-proyectos">Proyectos</a></li>
                 <li><a href="#formacion-academica">Formacion</a></li>
                 <li><a href="#info-contacto">Contacto</a></li>
-            </ul>
+                <a href="#" id="cerrar"><i class="bi bi-chevron-up " ></i></a>
+
+            
         </nav>
+
     </section>
 
     <section class="presentacion">
         <img src="img/foto_perfil.jpg" alt="hombre joven, cabello y barba oscuros, sonriendo." >
-        <section class="titulos">
-            <h2>Desarrollador Web</h2>
-            <h3>Front End</h3>
-            <h3>Diseño UX/UI</h3>
-            <h3>HTML & CSS</h3>
-            <h3>JavaScript</h3>
-            <h3>React Js</h3>    
+        <section class="contenido">
+            <section class="titulos">
+                <h2>Desarrollador Web</h2>
+                <h3>Front End</h3>
+                <h3>Diseño UX/UI</h3>
+                <h3>HTML & CSS</h3>
+                <h3>JavaScript</h3>
+                <h3>React Js</h3>   
+            </section>
+             
             <section class="redes">
                 <a class="link" href="mailto:sebaromero.luthier@gmail.com">
                     <i class="bi bi-envelope-at-fill"></i>
@@ -76,28 +85,35 @@
 
     <section id="mis-proyectos" class="proyectos">
         <h2>Proyectos</h2>
-        <section class="proyecto">
+        <section class="proyecto" id="proy-tareas">
             <section class="info">
                 <h3>Tablero de Tareas</h3>
-                <p>Experiencia de usuario diseñada para ser <strong>intuitiva</strong> y agradable<br>
+                <p id="btn-desc-tareas" class="btn-desc">Description <i class="bi bi-chevron-down " ></i></p>
+                <p id="text-desc-tareas" class="text-desc">Experiencia de usuario diseñada para ser <strong>intuitiva</strong> y agradable<br>
                     Utilizé <strong>JavaScript</strong> para la funcionalidad dinámica y la interacción del usuario <br> 
                     Código en <strong>módulos</strong> para facilitar el mantenimiento y la escalabilidad <br>
                     <strong>Almacenamiento local</strong> del navegador para guardar las listas de tareas del usuario <br>
                     <strong>Diseño adaptable</strong> para diferentes tamaños de pantalla y dispositivos<br>
                     Los usuarios pueden agregar fácilmente nuevas tareas a su lista<br>
-                    las tareas completadas se pueden marcar y tambien eliminar.</p>
+                    las tareas completadas se pueden marcar y tambien eliminar.<br>
+                    <a href="#proy-tareas" id="btn-ocultar-desc-tareas" class="btn-desc">Ocultar <i class="bi bi-chevron-up " ></i></a>
+                </p>
             </section>
-            <img src="img/tablero_tareas.png" alt="">
-            <section class="botones">
-                <a href="https://github.com/SebaRomeroX/taskmaster" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
-                <a href="https://sebaromerox.github.io/taskmaster/" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+            <section class="muestra-sitio">
+                <img src="img/tablero_tareas.png" alt="">
+                <section class="botones">
+                    <a href="https://github.com/SebaRomeroX/taskmaster" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
+                    <a href="https://sebaromerox.github.io/taskmaster/" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+                </section>
             </section>
+            
         </section>
 
-        <section class="proyecto">
+        <section class="proyecto" id="proy-carrera">
             <section class="info">
                 <h3>Carrea de Muñelocos</h3>
-                <p>Sencillo y entretenido juego de carreras desarrollado utilizando <strong>HTML5, CSS3 y JavaScript</strong> .<br>
+                <p id="btn-desc-carrera" class="btn-desc">Description <i class="bi bi-chevron-down " ></i></p>
+                <p id="text-desc-carrera" class="text-desc">Sencillo y entretenido juego de carreras desarrollado utilizando <strong>HTML5, CSS3 y JavaScript</strong> .<br>
                     El diseño y estilo del juego se han creado utilizando CSS3, garantizando una presentación atractiva y 
                     <strong>responsive</strong> en diferentes dispositivos y tamaños de pantalla.<br>
                     La lógica del juego se implementa mediante JavaScript, incluyendo la lógica del personaje y la detección de teclas.<br>
@@ -106,16 +122,20 @@
                     Cómo Jugar: Utiliza las teclas de flechas izquierda y derecha para que tu personaje dé pasos hasta el final de la pista, 
                     llega en primer lugar para pasar al siguiente nivel.<br>
                     Con cada nivel la dificultad incrementa al aumetar la velocidad de los rivales.<br>
+                    <a href="#proy-carrera" id="btn-ocultar-desc-carrera" class="btn-desc">Ocultar <i class="bi bi-chevron-up " ></i></a>
                     </p>
             </section>
-            <img src="img/carrera.png" alt="">
-            <section class="botones">
-                <a href="https://github.com/SebaRomeroX/carrera-munelocos" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
-                <a href="https://sebaromerox.github.io/carrera-munelocos" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+            <section class="muestra-sitio">
+                <img src="img/carrera.png" alt="">
+                <section class="botones">
+                    <a href="https://github.com/SebaRomeroX/carrera-munelocos" target="_blank" rel="noopener noreferer"><button class="boton">Repositorio</button></a>
+                    <a href="https://sebaromerox.github.io/carrera-munelocos" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
+                </section>
             </section>
+            
         </section>
         
-     
+       
 
     </section>
 
@@ -185,28 +205,30 @@
     </section>
 
     <section id="info-contacto" class="contacto">
+
         <h2>Contacto</h2>
         <h4>Contactame para trabajar en un proyecto juntos</h4>
         <section class="redes">
             <a class="link" href="mailto:sebaromero.luthier@gmail.com">
                 <i class="bi bi-envelope-at-fill"></i>
-                <p>Email</p>
+                <p class="nombre-red">Email</p>
             </a>
             <a class="link" href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
                 <i class="bi bi-github"></i>
-                <p>GitHub</p>
+                <p class="nombre-red">GitHub</p>
             </a>
             <a class="link" href="https://www.linkedin.com/in/sebastian-alejandro-romero" target="_blank" rel="noopener noreferer">
                 <i class="bi bi-linkedin"></i>
-                <p>LinkdIn</p>
+                <p class="nombre-red">LinkdIn</p>
             </a>
             <a class="link" href="docs/Sebastian A. Romero-CV.pdf" download>
                 <i class="bi bi-file-earmark-person-fill"></i>
-                <p>Curriculum</p>
+                <p class="nombre-red">Curriculum</p>
             </a>
         </section>
         <section class="footer">
-            <a href="#inicio">Sebastian A. Romero &#169;</a>
+            <p>Sebastian A. Romero &#169;</p>
+            <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
         </section>
     </section>
 
@@ -215,6 +237,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
+    <script src="js/porfolio.js"></script>
 </body>
 </html>

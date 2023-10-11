@@ -1,6 +1,8 @@
                 /*       GENERAL     */
 :root{
     --oscuro1: #111111;
+    --oscuro2: #181818;
+
     --claro1: #f0f0f0;
     --claro2:rgb(100, 100, 100);
     --claro3:rgb(218, 218, 218);
@@ -14,13 +16,17 @@
     border: 0;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth ;
 }
 body{
     background-image: linear-gradient(
         120deg,
         var(--fondo) 10%,
         var(--claro3) 90%
-      );    color: var(--claro1);
+    );    
+    color: var(--claro1);
+    display: flex;
+    flex-direction: column;
 }
 section{
     display: flex;
@@ -58,67 +64,103 @@ a{
     border-radius: 1em;
     font-size: 1em;
 }
-ul{
-    padding: 0;
-}
 
 
                 /*       TITULO     */
 
-.titulo{
-    flex-direction: column;
+.menu{
     justify-content: space-between;
     width: 100%;
+    padding: 2em ;
 }
-.titulo h1{
-    margin: 0.6em 0.6em 0 0.6em;
+.menu h1{
+    width: fit-content;
+    border-radius: 1em;
     color:var(--marca);
+    transition: 0.5s;
 }
-.titulo ul{
+
+.menu #enlaces{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 26vh;
 
-    margin: 0 2em;
+    height: 0;
+    transition: .6s;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    background-color: var(--claro3);
+    z-index: 1;
+
+    border-radius: 0 0 0 3em;
 }
-.titulo li{
-    margin: 0.6em;
+.menu li{
+    margin: 0;
     padding: 0.6em;
     border-radius: 0.6em;
     width: fit-content;
+    font-weight: bold;
 }
-.titulo li:hover{
-    background-color: var(--claro1);
+.menu a {
+    color: var(--oscuro1);
+    transition: 0.6s;
+    width: fit-content ;
 }
-.titulo a {
+.menu li:hover a{
+    color: var(--marca);
+}
+
+/* MENU MOBILE */
+.menu #abrir{
+    font-size: 3em;
     color: var(--claro1);
 }
-.titulo li:hover a{
-    color: var(--oscuro1);
+.menu #cerrar{
+    display: none;
+    width: fit-content;
 
+    font-size: 2em;
+}
+.menu:target #cerrar{
+    display: block;
+}
+.menu:target #enlaces{
+    height: 44vh;
+    
 }
 
 
                 /*       PRESENTACION     */
 .presentacion{
-    margin: 4em 1em;
-    border: 1px solid var(--marca);
-    border-radius: 1em;
+    margin: 2em 0;
+    padding: 2em 1em;
+    border-top: 3px solid var(--marca);
     flex-direction: column;
-}
-.presentacion:hover{
-    box-shadow: 2px 2px 45px var(--claro1);
-}
-.presentacion img{
-    border-radius: 50%;
-    margin: 1em;
-    width: 80%;
+    max-width: 1200px;
     align-self: center;
+    transition: 1s;
 
 }
-.presentacion .titulos{
-    display: flex;
+
+.presentacion img{
+    border-radius: 50%;
+    width: 80%;
+    align-self: center;
+    transition: 1s;
+}
+.presentacion .contenido{
     flex-direction: column;
-    margin: 1em 2em;
+}
+.presentacion .titulos{
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
 }
 .presentacion h2{
     margin: 0.4em 0;
@@ -128,17 +170,20 @@ ul{
 .presentacion .redes{
     display: flex;
     justify-content: space-evenly;
-    margin: 1em;
+    margin-top: 3em;
 }
 .presentacion a{
-    padding: 0.4em;
-    border-radius: 0.6em;
+    padding: 0.2em 0.6em;
+    border: 2px solid var(--claro1);
+    border-radius: 50%;
     color: var(--claro1);
-    font-size: 2em;
+    font-size: 1.2em;
+    transition: all 0.4s ease;
+
 }
 .presentacion a:hover{
     background-color: var(--claro1);
-    color: var(--oscuro1);
+    color: var(--fondo);
 
 }
 
@@ -164,11 +209,7 @@ ul{
     padding: 4em 1em;
     flex-direction: column;
 }
-.proyectos .proyecto{
-    flex-direction: column;
-    margin-bottom: 2em;
 
-}
 .proyectos h2{
     text-align: center;
     margin-bottom: 1em;
@@ -177,7 +218,8 @@ ul{
     flex-direction: column;
 }
 .proyectos h3{
-    color:var(--marca);
+    color: var(--marca);
+    font-weight: 900;
 
 }
 .proyectos p{
@@ -185,9 +227,10 @@ ul{
 }
 .proyectos img {
     border-radius: 0.2em;
+    width: 100%;
 }
 .proyectos a:hover .boton{
-    background-color: var(--oscuro1);
+    background-color: var(--marca);
     color: var(--claro1);
 }
 .proyectos .botones{
@@ -195,21 +238,62 @@ ul{
     align-self: center;
 }
 .proyectos .boton{
-    background-color:var(--marca);
+    background-color:var(--fondo);
     margin: 0 1em;
     color: var(--claro1);
+    transition: .6s;
 }
+
+/* DESCRIPCION */
+.btn-desc{
+    cursor: pointer;
+    margin: 0 1em;
+    color: var(--claro1);
+    font-weight: 600;
+}
+.text-desc{
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+
 
 /* PROYECTO */
 .proyecto{
     border: 2px solid var(--claro1);
     border-radius: 1em;
     padding: 1em 0.4em;
+    flex-direction: column;
+    margin-bottom: 2em;
+    transition: 0.5s;
+}
+.proyecto:hover{
+    box-shadow: 6px 8px 12px var(--oscuro1);
+    translate: -4px -4px;
+}
+.proyecto .muestra-sitio{
+    flex-direction: column;
 }
 
 /*  CAROUSEL  */
 .contenedor-estaticas{
     color: var(--oscuro1);
+    flex-direction: column;
+    align-items: center;
+    margin: 4em auto;
+}
+.contenedor-estaticas h3{
+    color: var(--fondo);
+    font-weight: 800;
+    padding: 1em;
+    background-color: var(--claro3);
+    border-radius: 1em;
+    transition: 0.5s;
+}
+.contenedor-estaticas:hover h3{
+    box-shadow: 6px 8px 12px var(--oscuro1);
+    translate: -4px -4px;
 }
 .carousel-inner{
     width: 80%;
@@ -233,10 +317,15 @@ ul{
     flex-direction: column;
     border: 1px solid var(--oscuro1);
     width: 90%;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 8em auto;
     border-radius: 1em;
     background-color: var(--fondo);
     color: var(--claro1);
+    transition: 0.5s;
+}
+.skills:hover{
+    box-shadow: 4px 6px 10px var(--oscuro1);
+    translate: -4px -12px;
 }
 .skills h2 {
     text-align: center;
@@ -257,18 +346,33 @@ ul{
 
 .formacion {
     flex-direction: column;
-    margin: 6em 0;
-    color: var(--oscuro1);
+    margin-top: 6em;
+    color: var(--claro1);
+    background-color: var(--marca);
+    border-top:  2px solid var(--claro1);
 }
 .formacion .tarjetas{
     flex-direction: column;
+    margin: 2em 1em;
 }
 .formacion .tarjeta{
     flex-direction: column;
-    margin: 1em;
+    margin:1em;
 }
 .formacion h2{
     text-align: center;
+    align-self: center;
+    margin-top: -2em;
+    border: 2px solid var(--claro1);
+    border-radius: 1em;
+    background-color: var(--marca);
+    width: fit-content;
+    padding: 1em 2em;
+    transition: .5s;
+}
+.formacion:hover h2{
+    box-shadow: 6px 8px 12px var(--oscuro1);
+    translate: -4px -4px;
 }
 .formacion .titulos{
     flex-direction: column;
@@ -278,8 +382,8 @@ ul{
     margin: 0.1em 0;
 }
 .formacion img{
-    width: 100%;
-    margin: 2em 0;
+    width: 80%;
+    margin: 2em auto;
     border-radius: 0.2em;
 }
 
@@ -290,10 +394,8 @@ ul{
 .contacto{
     flex-direction: column;
     text-align: center;
-    border-top: 1px solid var(--marca);
     padding: 4em 2em 0 2em;
-    color: var(--claro1);
-    background-color: var(--marca);
+    color: var(--fondo);
 }
 .contacto h4{
     margin: 1em;
@@ -305,14 +407,16 @@ ul{
     flex-direction: column;
     padding: 0.4em 1.6em;
     border-radius: 0.4em;
-    color: var(--claro1);
+    color: var(--fondo);
+    transition: all 0.4s ease;
+
 }
 .contacto .link:hover{
-    background-color: var(--oscuro1);
+    background-color: var(--fondo);
     color: var(--claro1);
     font-weight: bold;
 }
-.contacto p{
+.contacto .nombre-red{
     display: none;
 }
 .contacto i{
@@ -326,61 +430,82 @@ ul{
     padding: 2em;
     justify-content: center;
 }
+.footer p{
+    font-size: 1em;
+    color: var(--fondo);
+}
 .footer a{
-    color: var(--claro1);
+    color: var(--fondo);
+    position: absolute;
+    right: 1%;
 }
 
 
                 /*       RESPONSIVE     */
 @media screen and (min-width:768px){
-    .titulo{
-        align-items: center;
-    }
-    .titulo ul{
+
+    .menu ul{
         flex-direction: row;
         margin: 1em;
     } 
+    .menu h1{
+        box-shadow: 4px 4px 6px var(--claro2);
+        padding: 0.8em;
+    }
+    .menu #enlaces{
+        right: 3%;
+        width: 34vh;
+        border-radius: 0 0 3em 3em;
+    }
 
 
     .presentacion{
         margin: 4em 2em;
+        border: 2px solid var(--marca);
+        border-radius: 1em;
     }
     .presentacion img{
-        width: 70%;
+        width: 50%;
     }
     .presentacion .titulos{
         margin: 2em 4em;
     }
     .presentacion .redes{
-        margin-top: 2em;
+        margin: 2em 0;
     }
     .presentacion a{
-        padding: 0.2em 0.6em;
         margin: 0.2em 0.4em;
+        font-size: 2em;
     }
 
 
     .about{
         padding: 4em 2em;
+        margin: 1em 0;
+
     }
     .about p {
         margin: 1em 0 1em 0;
     }
 
 
-    .proyectos{
-        padding: 4em 1em;
-    }
     .proyecto{
         width: 90%;
         align-self: center;
         margin-top: 1em;
         padding: 2em;
     }
+    .text-desc{
+        height: fit-content;
+    }
+    .btn-desc{
+        display: none;
+    }
 
 
     .skills{
         width: 70%;
+        margin: 4em auto;
     }
 
 
@@ -389,13 +514,31 @@ ul{
         flex-wrap: wrap;
     }
     .formacion .tarjeta{
-        width: 40%;
-        margin: 0 5% 2em 5%;
+        width: 50%;
+        margin: 2em 0;
+    }
+    .formacion img{
+        width: 80%;
+        margin: 2em auto;
+    }
+    .formacion .titulos{
+        margin: 0 auto;
+        width: 70%;
     }
 
 
     .contacto h4{
         margin: 2em;
+    }
+    .contacto .redes{
+        margin: 1em 0;
+    }
+    .contacto .link{
+        padding: 0.4em 2em;
+    }
+    .contacto:hover .link{
+        box-shadow: 6px 8px 12px var(--oscuro1);
+        translate: -4px -4px;
     }
     
 }
@@ -403,23 +546,59 @@ ul{
 
 
 @media screen and (min-width:1024px){
-    .titulo{
+    .menu{
         flex-direction: row;
+        align-items: center;
     }
-    .titulo h1{
-        margin: 1em;
+    .menu h1{
+        box-shadow: none;
+    }
+    .menu:hover h1{
+        box-shadow: 4px 4px 6px var(--claro2);
+        translate: -4px -4px;
+    }
+    .menu li{
+        margin: 0.6em 1.2em;
+    }
+    .menu #abrir{
+        display: none;
+    }
+    .menu #enlaces{
+        height: fit-content;
+        flex-direction: row;
+        width: fit-content;
+        position: relative;
+        background-color: transparent;
+    }
+    .menu a{
+        color: var(--claro1);
     }
 
 
     .presentacion{
         flex-direction: row;
-        margin: 4em;
+        margin: 2em;
+    }
+    .presentacion:hover{
+        box-shadow: 6px 8px 6px var(--claro2);
+        translate: -4px -10px;
+    }
+    .presentacion .contenido{
+        justify-content: space-between;
+        
+        width: 60%;
     }
     .presentacion .titulos{
-        margin: 2em auto;
+        margin: 2em 0 2em 1em;
+        width: fit-content;
     }
     .presentacion img{
-        width: 50%;
+        opacity: 0.2;
+
+    }
+    
+    .presentacion:hover img{
+        opacity: 1;
     }
     .presentacion .redes{
         margin: 2em 0;
@@ -428,22 +607,51 @@ ul{
 
     .about{
         padding: 6em 16em 6em 4em;
+        margin: 6em 0;
     }
 
 
+    .proyectos{
+        padding: 1em;
+    }
     .proyectos .info{
         margin: 0 2em;    
+    }
+    .proyecto{
+        flex-direction: row;
+    }
+    .proyecto img{
+       width: 60vh;
+    }
+
+
+    .skills{
+        margin: 8em auto;
+    }
+
+
+    .formacion{
+        padding-bottom: 4em;
+    }
+    .formacion .tarjeta{
+        width: 33%;
+        margin: 0 auto;
+        
     }
 
 
     .contacto .redes{
-        margin: 1em;
+        margin: 2em auto ;
+        width: 90%;
     }
     .contacto .link{
-        padding: 0.4em 4em;
+        width: 20%;
+        max-width: 14em;
+        margin: 0 2em;
+        text-align: center;
     }
-    .contacto p{
-        display: flex;
+    .contacto .nombre-red{
+        display: block;
         font-size: 1em;
     }
 }
