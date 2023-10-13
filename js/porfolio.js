@@ -8,7 +8,7 @@ btnOcultarDescTareas.addEventListener('click',ocultarDescripcionTareas);
 let textDescTareas = document.getElementById('text-desc-tareas'); 
 
 function mostrarDescripcionTareas() {
-    textDescTareas.style.height='28em'
+    textDescTareas.style.height='190vw'
     btnDescTareas.style.display='none'
 }
 
@@ -29,7 +29,7 @@ btnOcultarDescCarrera.addEventListener('click',ocultarDescripcionCarrera);
 let textDescCarrera = document.getElementById('text-desc-carrera'); 
 
 function mostrarDescripcionCarrera() {
-    textDescCarrera.style.height='42em'
+    textDescCarrera.style.height='260vw'
     btnDescCarrera.style.display='none'
 }
 

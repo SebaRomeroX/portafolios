@@ -22,7 +22,7 @@ body{
     background-image: linear-gradient(
         120deg,
         var(--fondo) 10%,
-        var(--claro3) 90%
+        var(--marca) 90%
     );    
     color: var(--claro1);
     display: flex;
@@ -315,12 +315,11 @@ a{
 
 .skills{
     flex-direction: column;
-    border: 1px solid var(--oscuro1);
     width: 90%;
     margin: 0 auto 8em auto;
     border-radius: 1em;
-    background-color: var(--fondo);
-    color: var(--claro1);
+    background-color: var(--claro1);
+    color: var(--fondo);
     transition: 0.5s;
 }
 .skills:hover{
@@ -340,6 +339,13 @@ a{
 }
 .skills h4{
     margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills img{
+    color: pink;
+    width: 2em;
 }
 
                 /*       FORMACION     */
@@ -348,7 +354,7 @@ a{
     flex-direction: column;
     margin-top: 6em;
     color: var(--claro1);
-    background-color: var(--marca);
+    background-color: var(--fondo);
     border-top:  2px solid var(--claro1);
 }
 .formacion .tarjetas{
@@ -365,13 +371,13 @@ a{
     margin-top: -2em;
     border: 2px solid var(--claro1);
     border-radius: 1em;
-    background-color: var(--marca);
+    background-color: var(--fondo);
     width: fit-content;
     padding: 1em 2em;
     transition: .5s;
 }
 .formacion:hover h2{
-    box-shadow: 6px 8px 12px var(--oscuro1);
+    box-shadow: 6px 8px 12px var(--claro2);
     translate: -4px -4px;
 }
 .formacion .titulos{
@@ -395,7 +401,7 @@ a{
     flex-direction: column;
     text-align: center;
     padding: 4em 2em 0 2em;
-    color: var(--fondo);
+    color: var(--claro1);
 }
 .contacto h4{
     margin: 1em;
@@ -407,7 +413,7 @@ a{
     flex-direction: column;
     padding: 0.4em 1.6em;
     border-radius: 0.4em;
-    color: var(--fondo);
+    color: var(--claro1);
     transition: all 0.4s ease;
 
 }
@@ -506,6 +512,9 @@ a{
     .skills{
         width: 70%;
         margin: 4em auto;
+    }
+    .skills h4{
+        margin: 1.4em 1em ;
     }
 
 
@@ -627,6 +636,10 @@ a{
 
     .skills{
         margin: 8em auto;
+    }
+    .skills h4{
+        flex-direction: row;
+        margin: 1.4em 2em;
     }
 
 
