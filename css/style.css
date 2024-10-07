@@ -66,6 +66,7 @@ a{
 }
 
 
+
                 /*       TITULO     */
 
 .menu{
@@ -268,48 +269,75 @@ a{
     margin-bottom: 2em;
     transition: 0.5s;
 }
-.proyecto:hover{
-    box-shadow: 6px 8px 12px var(--oscuro1);
-    translate: -4px -4px;
-}
 .proyecto .muestra-sitio{
     flex-direction: column;
 }
 
-/*  CAROUSEL  */
-.contenedor-estaticas{
-    color: var(--oscuro1);
-    flex-direction: column;
-    align-items: center;
-    margin: 4em auto;
+
+/*---------------------- Carrusel ----------------------------*/
+
+
+.carousel-container{
+    width: 60vw;
+    margin:auto;
+    position: relative;
 }
-.contenedor-estaticas h3{
-    color: var(--fondo);
-    font-weight: 800;
-    padding: 1em;
-    background-color: var(--claro3);
-    border-radius: 1em;
-    transition: 0.5s;
-}
-.contenedor-estaticas:hover h3{
-    box-shadow: 6px 8px 12px var(--oscuro1);
-    translate: -4px -4px;
-}
-.carousel-inner{
-    width: 80%;
+
+.carousel {
+    width: 90%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 80vh;
+    max-width: 800px; /* Puedes cambiar esto si deseas un límite de ancho */
     margin: auto;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
-.carousel-contenedor{
+
+.carousel-slide {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 7.5s ease-in-out;
 }
-.img-carousel{
-    width: 100%;
+
+.carrrousel-item {
+    width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    flex-shrink: 0; /* Asegura que las imágenes no se encogen */
+    border-radius: 10px;
 }
-.link-carousel{
-    margin: 1em;
+
+.carousel-boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
 }
+
+#prevBtn {
+    left: 1px;
+}
+
+#nextBtn {
+    right: 1px;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+
+
+
+
+
 
                 /*       SKILLS     */
 
@@ -321,10 +349,6 @@ a{
     background-color: var(--claro1);
     color: var(--fondo);
     transition: 0.5s;
-}
-.skills:hover{
-    box-shadow: 4px 6px 10px var(--oscuro1);
-    translate: -4px -12px;
 }
 .skills h2 {
     text-align: center;
@@ -375,10 +399,6 @@ a{
     width: fit-content;
     padding: 1em 2em;
     transition: .5s;
-}
-.formacion:hover h2{
-    box-shadow: 6px 8px 12px var(--claro2);
-    translate: -4px -4px;
 }
 .formacion .titulos{
     flex-direction: column;
@@ -545,27 +565,15 @@ a{
     .contacto .link{
         padding: 0.4em 2em;
     }
-    .contacto:hover .link{
-        box-shadow: 6px 8px 12px var(--oscuro1);
-        translate: -4px -4px;
-    }
     
 }
-
-
 
 @media screen and (min-width:1024px){
     .menu{
         flex-direction: row;
         align-items: center;
     }
-    .menu h1{
-        box-shadow: none;
-    }
-    .menu:hover h1{
-        box-shadow: 4px 4px 6px var(--claro2);
-        translate: -4px -4px;
-    }
+
     .menu li{
         margin: 0.6em 1.2em;
     }
@@ -588,10 +596,6 @@ a{
         flex-direction: row;
         margin: 2em;
     }
-    .presentacion:hover{
-        box-shadow: 6px 8px 6px var(--claro2);
-        translate: -4px -10px;
-    }
     .presentacion .contenido{
         justify-content: space-between;
         
@@ -606,9 +610,6 @@ a{
 
     }
     
-    .presentacion:hover img{
-        opacity: 1;
-    }
     .presentacion .redes{
         margin: 2em 0;
     }
@@ -672,3 +673,24 @@ a{
 
 
 
+
+/*  ----------- Animacion Elevar           */
+
+
+.animated-element{
+    transition: transform 0.4s ease-in-out;
+    transform: translate(0, 0);
+}
+
+.animated {
+  transform: translate(-4px, -6px);
+  box-shadow: 6px 8px 12px var(--oscuro1);
+}
+
+.animated.presentacion, .animated.formacion-titulo{
+    box-shadow: 6px 6px 10px var(--claro2);
+}
+
+.animated .foto-perfil {
+    opacity: 1;
+}
