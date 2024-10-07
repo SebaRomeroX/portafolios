@@ -24,8 +24,8 @@
     <title>Sebastian Romero Dev</title>
 </head>
 <body>
-    <section id="inicio" class="menu">
-        <h1>Seba Romero</h1>
+    <section id="inicio" class="menu ">
+        <h1 class="animated-element">Seba Romero</h1>
 
         
         <a href="#inicio" id="abrir"><i class="bi bi-list" ></i></a>
@@ -43,8 +43,8 @@
 
     </section>
 
-    <section class="presentacion">
-        <img src="img/foto_perfil.jpg" alt="hombre joven, cabello y barba oscuros, sonriendo." >
+    <section class="presentacion animated-element">
+        <img class="foto-perfil"  src="img/foto_perfil.jpg" alt="hombre joven, cabello y barba oscuros, sonriendo." >
         <section class="contenido">
             <section class="titulos">
                 <h2>Web Developer</h2>
@@ -90,7 +90,7 @@
 
     <section id="mis-proyectos" class="proyectos">
         <h2>Proyectos</h2>
-        <section class="proyecto" id="proy-tareas">
+        <section class="proyecto animated-element" id="proy-tareas">
             <section class="info">
                 <h3>Tablero de Tareas</h3>
                 <p id="btn-desc-tareas" class="btn-desc">Description <i class="bi bi-chevron-down " ></i></p>
@@ -114,7 +114,7 @@
             
         </section>
 
-        <section class="proyecto" id="proy-carrera">
+        <section class="proyecto animated-element" id="proy-carrera">
             <section class="info">
                 <h3>Carrea de Muñelocos</h3>
                 <p id="btn-desc-carrera" class="btn-desc">Description <i class="bi bi-chevron-down " ></i></p>
@@ -137,50 +137,59 @@
                     <a href="https://sebaromerox.github.io/carrera-munelocos" target="_blank" rel="noopener noreferer"><button class="boton">Ir al Sitio</button></a>
                 </section>
             </section>
-            
         </section>
-        
-        
+
+
+        <section class="proyecto animated-element" id="proy-galerias">
+            <section class="info">
+                <h3>Image Galeries</h3>
+                <p id="text-desc-carrera" class="text-desc">Distintos tipos de presentacion para galerias de imagenes</p>
+            </section>
+            <section class="muestra-sitio">
+                <section class="carousel-container">
+                    <button class="carousel-boton" id="prevBtn">⟨</button>
+                    <section class="carousel">
+                        <section class="carousel-slide">
+                            <iframe class="carrrousel-item" src="https://sebaromerox.github.io/BENTOS/"></iframe>
+                            <iframe class="carrrousel-item" src="https://sebaromerox.github.io/Side-Scroll/"></iframe>
+                            <iframe class="carrrousel-item" src="https://sebaromerox.github.io/ANIMATION_SCROLL/"></iframe>
+                            <iframe class="carrrousel-item" src="https://sebaromerox.github.io/stacking-images/"></iframe>
+                        </section>
+                    </section>
+                    <button class="carousel-boton" id="nextBtn">⟩</button>
+                </section>
+            </section>
+        </section>
 
     </section>
 
-    <section class="skills">
+
+    <section class="skills animated-element">
         <h2>Skills</h2>
         <section class="lista">
-            
-                <h4><img src="./img/html.svg" alt=""> HTML</h4>
-                <h4><img src="./img/css.svg" alt=""> CSS</h4>
-                <h4><img src="./img/wordpress.svg" alt=""> WordPress</h4>
-            
-            
-                <h4><img src="./img/js.svg"> JavaScript</h4>
-                <h4><img src="./img/python.svg" alt=""> Python</h4>
-                <h4><img src="./img/cs.svg" alt=""> C#</h4>
-            
-            
-                <h4><img src="./img/nodejs.svg" alt=""> Node Js</h4>
-                <h4><img src="./img/mysql.svg" alt=""> MySQL</h4>
-            
-            
-                <h4><img src="./img/react.svg" alt=""> React Js</h4>
-                <h4><img src="./img/blazor.svg" alt=""> Blazor</h4>
-            
-            
-                <h4><img src="./img/git.svg" alt=""> Git</h4>
-                <h4><img src="./img/figma.svg" alt=""> Figma </h4>
-            
-            
-
-            
-
-            
-        </section>
+            <h4><img src="./img/html.svg" alt=""> HTML</h4>
+            <h4><img src="./img/css.svg" alt=""> CSS</h4>
+            <h4><img src="./img/wordpress.svg" alt=""> WordPress</h4>
         
+            <h4><img src="./img/js.svg"> JavaScript</h4>
+            <h4><img src="./img/python.svg" alt=""> Python</h4>
+            <!-- <h4><img src="./img/cs.svg" alt=""> C#</h4> -->
+        
+            <h4><img src="./img/nodejs.svg" alt=""> Node Js</h4>
+            <h4><img src="./img/mysql.svg" alt=""> MySQL</h4>
+        
+            <h4><img src="./img/react.svg" alt=""> React Js</h4>
+            <!-- <h4><img src="./img/blazor.svg" alt=""> Blazor</h4> -->
+        
+            <h4><img src="./img/git.svg" alt=""> Git</h4>
+            <h4><img src="./img/figma.svg" alt=""> Figma </h4>
+        </section>
     </section>
 
     <section  class="formacion">
-        <h2 id="formacion-academica">Formacion</h2>
+        <h2 id="formacion-academica" class="formacion-titulo animated-element">Formacion</h2>
         <section class="tarjetas">
+
             <section class="tarjeta">
                 <img src="img/alura_logo.jpg" alt="">
                 <section class="titulos">
@@ -217,6 +226,15 @@
                 
             </section>
 
+            <section class="tarjeta">
+                <img src="img/unlu.jpg" alt="">
+                <section class="titulos">
+                    <h4>Programacion en Python</h4>
+                    <p>2022. Universidad Nacional de Lujan</p>
+                </section>
+                
+            </section>
+
         </section>
         
     </section>
@@ -226,19 +244,19 @@
         <h2>Contacto</h2>
         <h4>Contactame para trabajar en un proyecto juntos</h4>
         <section class="redes">
-            <a class="link" href="mailto:seba.rmx.dev@gmail.com">
+            <a class="link animated-element" href="mailto:seba.rmx.dev@gmail.com">
                 <i class="bi bi-envelope-at-fill"></i>
                 <p class="nombre-red">Email</p>
             </a>
-            <a class="link" href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
+            <a class="link animated-element" href="https://github.com/SebaRomeroX" target="_blank" rel="noopener noreferer">
                 <i class="bi bi-github"></i>
                 <p class="nombre-red">GitHub</p>
             </a>
-            <a class="link" href="https://www.linkedin.com/in/sebastian-alejandro-romero" target="_blank" rel="noopener noreferer">
+            <a class="link animated-element" href="https://www.linkedin.com/in/sebastian-alejandro-romero" target="_blank" rel="noopener noreferer">
                 <i class="bi bi-linkedin"></i>
                 <p class="nombre-red">LinkdIn</p>
             </a>
-            <a class="link" href="docs/Sebastian A. Romero-CV.pdf" download>
+            <a class="link animated-element" href="docs/Sebastian A. Romero-CV.pdf" download>
                 <i class="bi bi-file-earmark-person-fill"></i>
                 <p class="nombre-red">Curriculum</p>
             </a>
