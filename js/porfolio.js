@@ -42,40 +42,40 @@ function ocultarDescripcionCarrera() {
 
 // ----------------------------------- Carrusel
 
+document.querySelectorAll('.carousel-container').forEach(carousel => {
+  const carouselSlide = carousel.querySelector('.carousel-slide');
+  const images = carousel.querySelectorAll('.carrrousel-item');
+  
+  // Contadores
+  let counter = 0;
+  let size = images[0].clientWidth; // El tamaño de la primera imagen
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const images = document.querySelectorAll('.carrrousel-item');
+  // Función para mover el carrusel
+  function updateCarouselPosition() {
+      carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 
-// Contadores
-let counter = 0;
-let size = images[0].clientWidth; // El tamaño de la primera imagen
+  // Mover al siguiente
+  carousel.querySelector('.nextBtn').addEventListener('click', () => {
+      if (counter >= images.length - 1) return; // Evitar avanzar más allá de la última imagen
+      counter++;
+      updateCarouselPosition();
+  });
 
-// Función para mover el carrusel
-function updateCarouselPosition() {
-    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-}
+  // Mover al anterior
+  carousel.querySelector('.prevBtn').addEventListener('click', () => {
+      if (counter <= 0) return; // Evitar retroceder más allá de la primera imagen
+      counter--;
+      updateCarouselPosition();
+  });
 
-// Mover al siguiente
-document.getElementById('nextBtn').addEventListener('click', () => {
-    if (counter >= images.length - 1) return; // Evitar avanzar más allá de la última imagen
-    counter++;
-    updateCarouselPosition();
+  // Recalcular el tamaño cuando la ventana cambie de tamaño
+  window.addEventListener('resize', () => {
+      size = images[0].clientWidth; // Recalcula el tamaño de la imagen
+      updateCarouselPosition(); // Ajusta la posición del carrusel
+  });
 });
-
-// Mover al anterior
-document.getElementById('prevBtn').addEventListener('click', () => {
-    if (counter <= 0) return; // Evitar retroceder más allá de la primera imagen
-    counter--;
-    updateCarouselPosition();
-});
-
-// Recalcular el tamaño cuando la ventana cambie de tamaño
-window.addEventListener('resize', () => {
-    size = images[0].clientWidth; // Recalcula el tamaño de la imagen
-    updateCarouselPosition(); // Ajusta la posición del carrusel
-});
-
 
 
 
