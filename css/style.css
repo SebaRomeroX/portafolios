@@ -27,38 +27,49 @@ body{
     color: var(--claro1);
     display: flex;
     flex-direction: column;
+
+    opacity: 0;
+    animation: carga 1s .6s forwards;
 }
+
+@keyframes carga{   /*  Animcion carga inicial    */
+    to{
+        opacity: 1;
+    }
+}
+
 section{
     display: flex;
 }
 h1{
     font-size:2.6em;
     font-family: 'Rubik Dirt', cursive;
-
 }
+
 h2{
     font-size:2.2em;
     font-family: 'Rubik Dirt', cursive;
-
 }
+
 h3{
     font-size:1.8em;
     font-family: 'Roboto', sans-serif;
-
 }
+
 h4{
     font-size:1.4em;
     font-family: 'Roboto', sans-serif;
 }
+
 p{
     font-size:1.2em;
-    
     font-family: 'Quicksand', sans-serif;
 }
+
 a{
     text-decoration: none;
-
 }
+
 .boton{
     padding: 1em;
     border-radius: 1em;
@@ -74,6 +85,7 @@ a{
     width: 100%;
     padding: 2em ;
 }
+
 .menu h1{
     width: fit-content;
     border-radius: 1em;
@@ -101,6 +113,7 @@ a{
 
     border-radius: 0 0 0 3em;
 }
+
 .menu li{
     margin: 0;
     padding: 0.6em;
@@ -108,14 +121,17 @@ a{
     width: fit-content;
     font-weight: bold;
 }
+
 .menu a {
     color: var(--oscuro1);
     transition: 0.6s;
     width: fit-content ;
 }
+
 .menu li:hover a{
     color: var(--marca);
 }
+
 
 /* MENU MOBILE */
 .menu #abrir{
@@ -133,20 +149,19 @@ a{
 }
 .menu:target #enlaces{
     height: 44vh;
-    
 }
+
 
 
                 /*       PRESENTACION     */
 .presentacion{
     margin: 2em 0;
     padding: 2em 1em;
-    border-top: 3px solid var(--marca);
+    border-top: 1px solid var(--marca);
     flex-direction: column;
     max-width: 1200px;
     align-self: center;
     transition: 1s;
-
 }
 
 .presentacion img{
@@ -155,24 +170,28 @@ a{
     align-self: center;
     transition: 1s;
 }
+
 .presentacion .contenido{
     flex-direction: column;
 }
+
 .presentacion .titulos{
     flex-direction: column;
     align-self: center;
     width: 80%;
 }
+
 .presentacion h2{
     margin: 0.4em 0;
     color:var(--marca);
-
 }
+
 .presentacion .redes{
     display: flex;
     justify-content: space-evenly;
     margin-top: 3em;
 }
+
 .presentacion a{
     padding: 0.2em 0.6em;
     border: 2px solid var(--claro1);
@@ -180,13 +199,13 @@ a{
     color: var(--claro1);
     font-size: 1.2em;
     transition: all 0.4s ease;
-
 }
+
 .presentacion a:hover{
     background-color: var(--claro1);
     color: var(--fondo);
-
 }
+
 
                 /*       ABOUT     */
 
@@ -195,12 +214,13 @@ a{
     padding: 4em 1em;
     background-color: var(--claro3);
 }
+
 .about h2{
     color: var(--oscuro1);
 }
+
 .about p{
     color:var(--oscuro1);
-
 }
 
 
@@ -215,35 +235,42 @@ a{
     text-align: center;
     margin-bottom: 1em;
 }
+
 .proyectos .info{
     flex-direction: column;
 }
+
 .proyectos h3{
     color: var(--marca);
     font-weight: 900;
-
 }
+
 .proyectos p{
     margin-bottom: 1em;
 }
+
 .proyectos img {
     border-radius: 0.2em;
     width: 100%;
 }
+
 .proyectos a:hover .boton{
     background-color: var(--marca);
     color: var(--claro1);
 }
+
 .proyectos .botones{
     margin: 1em;
     align-self: center;
 }
+
 .proyectos .boton{
     background-color:var(--fondo);
     margin: 0 1em;
     color: var(--claro1);
     transition: .6s;
 }
+
 
 /* DESCRIPCION */
 .btn-desc{
@@ -252,6 +279,7 @@ a{
     color: var(--claro1);
     font-weight: 600;
 }
+
 .text-desc{
     height: 0;
     overflow: hidden;
@@ -262,7 +290,7 @@ a{
 
 /* PROYECTO */
 .proyecto{
-    border: 2px solid var(--claro1);
+    border-top: 2px solid var(--claro1);
     border-radius: 1em;
     padding: 1em 0.4em;
     flex-direction: column;
@@ -274,8 +302,8 @@ a{
 }
 
 
-/*---------------------- Carrusel ----------------------------*/
 
+/*---------------------- Carrusel ----------------------------*/
 
 .carousel-container{
     width: 60vw;
@@ -331,14 +359,6 @@ button:focus {
 
 
 
-/*--------------------------------------------------------------------*/
-
-
-
-
-
-
-
                 /*       SKILLS     */
 
 .skills{
@@ -350,27 +370,31 @@ button:focus {
     color: var(--fondo);
     transition: 0.5s;
 }
+
 .skills h2 {
     text-align: center;
     margin-top: 1em;
     color:var(--marca);
-
 }
+
 .skills .lista{
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em;
 }
+
 .skills h4{
     margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .skills img{
     color: pink;
     width: 2em;
 }
+
 
                 /*       FORMACION     */
 
@@ -379,34 +403,38 @@ button:focus {
     margin-top: 6em;
     color: var(--claro1);
     background-color: var(--fondo);
-    border-top:  2px solid var(--claro1);
 }
+
 .formacion .tarjetas{
     flex-direction: column;
     margin: 2em 1em;
 }
+
 .formacion .tarjeta{
     flex-direction: column;
     margin:1em;
 }
+
 .formacion h2{
     text-align: center;
     align-self: center;
     margin-top: -2em;
-    border: 2px solid var(--claro1);
     border-radius: 1em;
     background-color: var(--fondo);
     width: fit-content;
     padding: 1em 2em;
     transition: .5s;
 }
+
 .formacion .titulos{
     flex-direction: column;
     margin-left: 2em;
 }
+
 .formacion h4{
     margin: 0.1em 0;
 }
+
 .formacion img{
     width: 80%;
     margin: 2em auto;
@@ -423,28 +451,33 @@ button:focus {
     padding: 4em 2em 0 2em;
     color: var(--claro1);
 }
+
 .contacto h4{
     margin: 1em;
 }
+
 .contacto .redes{
     justify-content: space-evenly;
 }
+
 .contacto .link{
     flex-direction: column;
     padding: 0.4em 1.6em;
     border-radius: 0.4em;
     color: var(--claro1);
     transition: all 0.4s ease;
-
 }
+
 .contacto .link:hover{
     background-color: var(--fondo);
     color: var(--claro1);
     font-weight: bold;
 }
+
 .contacto .nombre-red{
     display: none;
 }
+
 .contacto i{
     font-size: 2em;
 }
@@ -456,10 +489,12 @@ button:focus {
     padding: 2em;
     justify-content: center;
 }
+
 .footer p{
     font-size: 1em;
     color: var(--fondo);
 }
+
 .footer a{
     color: var(--fondo);
     position: absolute;
@@ -469,15 +504,11 @@ button:focus {
 
                 /*       RESPONSIVE     */
 @media screen and (min-width:768px){
-
     .menu ul{
         flex-direction: row;
         margin: 1em;
     } 
-    .menu h1{
-        box-shadow: 4px 4px 6px var(--claro2);
-        padding: 0.8em;
-    }
+
     .menu #enlaces{
         right: 3%;
         width: 34vh;
@@ -487,18 +518,22 @@ button:focus {
 
     .presentacion{
         margin: 4em 2em;
-        border: 2px solid var(--marca);
         border-radius: 1em;
+        border: 0;
     }
+
     .presentacion img{
         width: 50%;
     }
+
     .presentacion .titulos{
         margin: 2em 4em;
     }
+
     .presentacion .redes{
         margin: 2em 0;
     }
+
     .presentacion a{
         margin: 0.2em 0.4em;
         font-size: 2em;
@@ -508,8 +543,8 @@ button:focus {
     .about{
         padding: 4em 2em;
         margin: 1em 0;
-
     }
+
     .about p {
         margin: 1em 0 1em 0;
     }
@@ -521,9 +556,11 @@ button:focus {
         margin-top: 1em;
         padding: 2em;
     }
+
     .text-desc{
         height: fit-content;
     }
+
     .btn-desc{
         display: none;
     }
@@ -533,6 +570,7 @@ button:focus {
         width: 70%;
         margin: 4em auto;
     }
+
     .skills h4{
         margin: 1.4em 1em ;
     }
@@ -542,14 +580,17 @@ button:focus {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .formacion .tarjeta{
         width: 50%;
         margin: 2em 0;
     }
+
     .formacion img{
         width: 80%;
         margin: 2em auto;
     }
+
     .formacion .titulos{
         margin: 0 auto;
         width: 70%;
@@ -559,14 +600,16 @@ button:focus {
     .contacto h4{
         margin: 2em;
     }
+
     .contacto .redes{
         margin: 1em 0;
     }
+
     .contacto .link{
         padding: 0.4em 2em;
     }
-    
 }
+
 
 @media screen and (min-width:1024px){
     .menu{
@@ -577,9 +620,11 @@ button:focus {
     .menu li{
         margin: 0.6em 1.2em;
     }
+
     .menu #abrir{
         display: none;
     }
+
     .menu #enlaces{
         height: fit-content;
         flex-direction: row;
@@ -587,6 +632,7 @@ button:focus {
         position: relative;
         background-color: transparent;
     }
+
     .menu a{
         color: var(--claro1);
     }
@@ -596,18 +642,20 @@ button:focus {
         flex-direction: row;
         margin: 2em;
     }
+
     .presentacion .contenido{
         justify-content: space-between;
         
         width: 60%;
     }
+
     .presentacion .titulos{
         margin: 2em 0 2em 1em;
         width: fit-content;
     }
-    .presentacion img{
-        opacity: 0.2;
 
+    .presentacion img{
+        opacity: 0.1;
     }
     
     .presentacion .redes{
@@ -624,12 +672,15 @@ button:focus {
     .proyectos{
         padding: 1em;
     }
+
     .proyectos .info{
         margin: 0 2em;    
     }
+
     .proyecto{
         flex-direction: row;
     }
+
     .proyecto img{
        width: 60vh;
     }
@@ -638,6 +689,7 @@ button:focus {
     .skills{
         margin: 8em auto;
     }
+
     .skills h4{
         flex-direction: row;
         margin: 1.4em 2em;
@@ -647,10 +699,10 @@ button:focus {
     .formacion{
         padding-bottom: 4em;
     }
+
     .formacion .tarjeta{
         width: 33%;
         margin: 0 auto;
-        
     }
 
 
@@ -658,12 +710,14 @@ button:focus {
         margin: 2em auto ;
         width: 90%;
     }
+
     .contacto .link{
         width: 20%;
         max-width: 14em;
         margin: 0 2em;
         text-align: center;
     }
+    
     .contacto .nombre-red{
         display: block;
         font-size: 1em;
@@ -692,5 +746,5 @@ button:focus {
 }
 
 .animated .foto-perfil {
-    opacity: 1;
+    opacity: .7;
 }
