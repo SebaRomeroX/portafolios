@@ -83,7 +83,7 @@ a{
 .menu{
     justify-content: space-between;
     width: 100%;
-    padding: 2em ;
+    padding: 1.6em ;
 }
 
 .menu h1{
@@ -91,6 +91,7 @@ a{
     border-radius: 1em;
     color:var(--marca);
     transition: 0.5s;
+    margin: 0;
 }
 
 .menu #enlaces{
@@ -155,7 +156,6 @@ a{
 
                 /*       PRESENTACION     */
 .presentacion{
-    margin: 2em 0;
     padding: 2em 1em;
     border-top: 1px solid var(--marca);
     flex-direction: column;
@@ -227,7 +227,7 @@ a{
                 /*       PROYECTOS     */
 
 .proyectos{
-    padding: 4em 1em;
+    padding: 4em .2em;
     flex-direction: column;
 }
 
@@ -243,6 +243,7 @@ a{
 .proyectos h3{
     color: var(--marca);
     font-weight: 900;
+    margin-left: .6em;
 }
 
 .proyectos p{
@@ -290,7 +291,6 @@ a{
 
 /* PROYECTO */
 .proyecto{
-    border-top: 2px solid var(--claro1);
     border-radius: 1em;
     padding: 1em 0.4em;
     flex-direction: column;
@@ -306,7 +306,6 @@ a{
 /*---------------------- Carrusel ----------------------------*/
 
 .carousel-container{
-    width: 60vw;
     margin:auto;
     position: relative;
 }
@@ -364,7 +363,7 @@ button:focus {
 .skills{
     flex-direction: column;
     width: 90%;
-    margin: 0 auto 8em auto;
+    margin: 0 auto 4em auto;
     border-radius: 1em;
     background-color: var(--claro1);
     color: var(--fondo);
@@ -407,12 +406,12 @@ button:focus {
 
 .formacion .tarjetas{
     flex-direction: column;
-    margin: 2em 1em;
+    margin-bottom: 1em;
 }
 
 .formacion .tarjeta{
     flex-direction: column;
-    margin:1em;
+    margin:1em 0;
 }
 
 .formacion h2{
@@ -448,7 +447,7 @@ button:focus {
 .contacto{
     flex-direction: column;
     text-align: center;
-    padding: 4em 2em 0 2em;
+    padding-top: 4em;
     color: var(--claro1);
 }
 
@@ -504,6 +503,9 @@ button:focus {
 
                 /*       RESPONSIVE     */
 @media screen and (min-width:768px){
+    .menu{
+        padding: 2em ;
+    }
     .menu ul{
         flex-direction: row;
         margin: 1em;
@@ -549,8 +551,12 @@ button:focus {
         margin: 1em 0 1em 0;
     }
 
+    .proyectos{
+        padding: 4em 1em;
+    }
 
     .proyecto{
+        border-top: 2px solid var(--claro1);
         width: 90%;
         align-self: center;
         margin-top: 1em;
@@ -579,6 +585,7 @@ button:focus {
     .formacion .tarjetas{
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 2em 1em;
     }
 
     .formacion .tarjeta{
@@ -597,6 +604,10 @@ button:focus {
     }
 
 
+    .contacto{
+        padding: 4em 2em 0 2em;
+    }
+
     .contacto h4{
         margin: 2em;
     }
@@ -607,6 +618,27 @@ button:focus {
 
     .contacto .link{
         padding: 0.4em 2em;
+    }
+
+    /*  ----------- Animacion Elevar           */
+
+
+    .animated-element{
+        transition: transform 0.4s ease-in-out;
+        transform: translate(0, 0);
+    }
+
+    .animated {
+    transform: translate(-4px, -6px);
+    box-shadow: 6px 8px 12px var(--oscuro1);
+    }
+
+    .animated.presentacion, .animated.formacion-titulo{
+        box-shadow: 6px 6px 10px var(--claro2);
+    }
+
+    .animated .foto-perfil {
+        opacity: .7;
     }
 }
 
@@ -685,6 +717,10 @@ button:focus {
        width: 60vh;
     }
 
+    .carousel-container{
+        width: 60vw;
+    }
+
 
     .skills{
         margin: 8em auto;
@@ -722,29 +758,4 @@ button:focus {
         display: block;
         font-size: 1em;
     }
-}
-
-
-
-
-
-/*  ----------- Animacion Elevar           */
-
-
-.animated-element{
-    transition: transform 0.4s ease-in-out;
-    transform: translate(0, 0);
-}
-
-.animated {
-  transform: translate(-4px, -6px);
-  box-shadow: 6px 8px 12px var(--oscuro1);
-}
-
-.animated.presentacion, .animated.formacion-titulo{
-    box-shadow: 6px 6px 10px var(--claro2);
-}
-
-.animated .foto-perfil {
-    opacity: .7;
 }
