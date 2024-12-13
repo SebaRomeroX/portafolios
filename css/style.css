@@ -227,7 +227,7 @@ a{
                 /*       PROYECTOS     */
 
 .proyectos{
-    padding: 4em .2em;
+    padding: 4em .4em;
     flex-direction: column;
 }
 
@@ -292,7 +292,7 @@ a{
 /* PROYECTO */
 .proyecto{
     border-radius: 1em;
-    padding: 1em 0.4em;
+    padding: 1em 0;
     flex-direction: column;
     margin-bottom: 2em;
     transition: 0.5s;
@@ -311,8 +311,8 @@ a{
 }
 
 .carousel {
-    width: 90%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    height: 80vh;
+    width: 94%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 65vh;
     max-width: 800px; /* Puedes cambiar esto si deseas un límite de ancho */
     margin: auto;
     overflow: hidden; /* Oculta cualquier contenido que se desborde */
