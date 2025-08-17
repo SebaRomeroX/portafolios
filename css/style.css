@@ -1,15 +1,13 @@
                 /*       GENERAL     */
 :root{
     --oscuro1: #111111;
-    --oscuro2: #181818;
 
-    --claro1: #f0f0f0;
-    --claro2:rgb(100, 100, 100);
     --claro3:rgb(218, 218, 218);
 
     --marca:rgb(2, 149, 185);
     --fondo:rgb(10, 0, 22);
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -18,13 +16,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth ;
 }
+
 body{
     background-image: linear-gradient(
         120deg,
         var(--fondo) 10%,
         var(--marca) 90%
     );    
-    color: var(--claro1);
+    color: var(--claro3);
     display: flex;
     flex-direction: column;
 
@@ -89,7 +88,7 @@ a{
 .menu h1{
     width: fit-content;
     border-radius: 1em;
-    color:var(--marca);
+    color:var(--claro3);
     transition: 0.5s;
     margin: 0;
 }
@@ -137,7 +136,7 @@ a{
 /* MENU MOBILE */
 .menu #abrir{
     font-size: 3em;
-    color: var(--claro1);
+    color: var(--claro3);
 }
 .menu #cerrar{
     display: none;
@@ -157,7 +156,6 @@ a{
                 /*       PRESENTACION     */
 .presentacion{
     padding: 2em 1em;
-    border-top: 1px solid var(--marca);
     flex-direction: column;
     max-width: 1200px;
     align-self: center;
@@ -166,7 +164,7 @@ a{
 
 .presentacion img{
     border-radius: 50%;
-    width: 80%;
+    width: 60%;
     align-self: center;
     transition: 1s;
 }
@@ -183,7 +181,7 @@ a{
 
 .presentacion h2{
     margin: 0.4em 0;
-    color:var(--marca);
+    color:var(--claro3);
 }
 
 .presentacion .redes{
@@ -194,15 +192,15 @@ a{
 
 .presentacion a{
     padding: 0.2em 0.6em;
-    border: 2px solid var(--claro1);
+    border: 2px solid var(--claro3);
     border-radius: 50%;
-    color: var(--claro1);
+    color: var(--claro3);
     font-size: 1.2em;
     transition: all 0.4s ease;
 }
 
 .presentacion a:hover{
-    background-color: var(--claro1);
+    background-color: var(--claro3);
     color: var(--fondo);
 }
 
@@ -241,7 +239,7 @@ a{
 }
 
 .proyectos h3{
-    color: var(--marca);
+    color: var(--claro3);
     font-weight: 900;
     margin-left: .6em;
 }
@@ -257,7 +255,7 @@ a{
 
 .proyectos a:hover .boton{
     background-color: var(--marca);
-    color: var(--claro1);
+    color: var(--claro3);
 }
 
 .proyectos .botones{
@@ -266,9 +264,9 @@ a{
 }
 
 .proyectos .boton{
-    background-color:var(--fondo);
+    background-color:var(--oscuro1);
     margin: 0 1em;
-    color: var(--claro1);
+    color: var(--claro3);
     transition: .6s;
 }
 
@@ -277,7 +275,7 @@ a{
 .btn-desc{
     cursor: pointer;
     margin: 0 1em;
-    color: var(--claro1);
+    color: var(--claro3);
     font-weight: 600;
 }
 
@@ -291,7 +289,6 @@ a{
 
 /* PROYECTO */
 .proyecto{
-    border-radius: 1em;
     padding: 1em 0;
     flex-direction: column;
     margin-bottom: 2em;
@@ -302,78 +299,19 @@ a{
 }
 
 
-
-/*---------------------- Carrusel ----------------------------*/
-
-.carousel-container{
-    margin:auto;
-    position: relative;
-}
-
-.carousel {
-    width: 94%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    height: 65vh;
-    max-width: 800px; /* Puedes cambiar esto si deseas un límite de ancho */
-    margin: auto;
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 7.5s ease-in-out;
-}
-
-.carrrousel-item {
-    width: 100%; /* Cada imagen ocupa el 100% del contenedor */
-    flex-shrink: 0; /* Asegura que las imágenes no se encogen */
-    border-radius: 10px;
-}
-
-.carousel-boton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-#prevBtn {
-    left: 1px;
-}
-
-#nextBtn {
-    right: 1px;
-}
-
-button:focus {
-    outline: none;
-}
-
-
-
-
                 /*       SKILLS     */
 
 .skills{
     flex-direction: column;
-    width: 90%;
     margin: 0 auto 4em auto;
-    border-radius: 1em;
-    background-color: var(--claro1);
-    color: var(--fondo);
+    background-color: var(--claro3);
+    color: var(--oscuro1);
     transition: 0.5s;
 }
 
 .skills h2 {
     text-align: center;
     margin-top: 1em;
-    color:var(--marca);
 }
 
 .skills .lista{
@@ -390,7 +328,6 @@ button:focus {
 }
 
 .skills img{
-    color: pink;
     width: 2em;
 }
 
@@ -400,8 +337,8 @@ button:focus {
 .formacion {
     flex-direction: column;
     margin-top: 6em;
-    color: var(--claro1);
-    background-color: var(--fondo);
+    color: var(--claro3);
+    background-color: var(--oscuro1);
 }
 
 .formacion .tarjetas{
@@ -419,7 +356,7 @@ button:focus {
     align-self: center;
     margin-top: -2em;
     border-radius: 1em;
-    background-color: var(--fondo);
+    background-color: var(--oscuro1);
     width: fit-content;
     padding: 1em 2em;
     transition: .5s;
@@ -448,7 +385,7 @@ button:focus {
     flex-direction: column;
     text-align: center;
     padding-top: 4em;
-    color: var(--claro1);
+    color: var(--claro3);
 }
 
 .contacto h4{
@@ -463,13 +400,13 @@ button:focus {
     flex-direction: column;
     padding: 0.4em 1.6em;
     border-radius: 0.4em;
-    color: var(--claro1);
+    color: var(--claro3);
     transition: all 0.4s ease;
 }
 
 .contacto .link:hover{
-    background-color: var(--fondo);
-    color: var(--claro1);
+    background-color: var(--oscuro1);
+    color: var(--claro3);
     font-weight: bold;
 }
 
@@ -491,11 +428,11 @@ button:focus {
 
 .footer p{
     font-size: 1em;
-    color: var(--fondo);
+    color: var(--oscuro1);
 }
 
 .footer a{
-    color: var(--fondo);
+    color: var(--oscuro1);
     position: absolute;
     right: 1%;
 }
@@ -525,7 +462,7 @@ button:focus {
     }
 
     .presentacion img{
-        width: 50%;
+        width: 40%;
     }
 
     .presentacion .titulos{
@@ -556,7 +493,7 @@ button:focus {
     }
 
     .proyecto{
-        border-top: 2px solid var(--claro1);
+        border-top: 2px solid var(--claro3);
         width: 90%;
         align-self: center;
         margin-top: 1em;
@@ -619,27 +556,6 @@ button:focus {
     .contacto .link{
         padding: 0.4em 2em;
     }
-
-    /*  ----------- Animacion Elevar           */
-
-
-    .animated-element{
-        transition: transform 0.4s ease-in-out;
-        transform: translate(0, 0);
-    }
-
-    .animated {
-    transform: translate(-4px, -6px);
-    box-shadow: 6px 8px 12px var(--oscuro1);
-    }
-
-    .animated.presentacion, .animated.formacion-titulo{
-        box-shadow: 6px 6px 10px var(--claro2);
-    }
-
-    .animated .foto-perfil {
-        opacity: .7;
-    }
 }
 
 
@@ -666,7 +582,7 @@ button:focus {
     }
 
     .menu a{
-        color: var(--claro1);
+        color: var(--claro3);
     }
 
 
@@ -687,7 +603,7 @@ button:focus {
     }
 
     .presentacion img{
-        opacity: 0.1;
+        opacity: 0.6;
     }
     
     .presentacion .redes{
