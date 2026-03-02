@@ -55,10 +55,10 @@ Copialos y pegalos en tu proyecto.
 [Ir al Sitio](https://estilatutexto.netlify.app/)
 [Repositorio](https://github.com/SebaRomeroX/estila-tu-texto)
 
-**📱 enContacto**
-![enContacto](./img/enContacto_img.png)
+**📱 enContacto**  
+![enContacto](./img/enContacto_img.png)  
 Gestion de salas de chat.  
-Crea distintas salas y a los usuarios que participaran en ellas.  
+Administra distintas salas y a los usuarios que participaran en ellas.  
 "Tu equipo siempre enContacto"
 
 **Tecnologías**
