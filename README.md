@@ -1,76 +1,74 @@
-### </> Seba Romero Portafolios
+### </> Seba Romero Portfolio
 
-## Front End Developer
+### Front End Developer
 
-## ✨ Características
+### ✨ Characteristics
 
-- Diseño responsive
-- Proyectos destacados
-- Sección de contacto
-- Estructura clara y derecta
+- Responsive Design
+- Featured projects
+- Contact Section
+- Straightforward structure
 
-## 🛠️ Tecnologías utilizadas
+### 🛠️ Technologies
 
 - HTML/CSS  
-  Mantener la simpleza lo maximo posible
+  Keep it simple as much as possible
 
-## 🚀 Demo en vivo
+### 🚀 Live Demo
 
-[Portafolios](https://sebaromerox.github.io/portafolios/)
+[Portfolio](https://sebaromerox.github.io/portafolios/)
 
-## 📸 Capturas de pantalla
+### 📸 Screenshots
 
-![Presentacion](./img/cap_1.png)
-![Sobre Mi](./img/cap_2.png)
+![Introducing](./img/cap_1.png)
+![About me](./img/cap_2.png)
 
-## 🎯 Proyectos destacados
+### 🎯 Projects
 
-**🏃‍♂️ La Carrera de los Muñelocos**
-![Carrera de Muñelocos](./img/carrera.jpg)
-Juego de velocidad hecho con Vanilla JavaScript.  
-Presiona las flechas de direccion lo mas rapido que puedas.  
-Llega antes que tus rivales a la meta y pasa al siguiente nivel.
+**🏃‍♂️ Muñelocos Racing**
+![Muñelocos Racing](./img/carrera.jpg)
+A speed-based game built with Vanilla JavaScript.
+Press the arrow keys as quickly as you can to reach the finish line before your opponents and advance to the next level.
 
-**Tecnologías**
+**Techs**
 
 - Vanilla JavaScript
 - HTML Canvas
 - CSS
 
-[Ir al Sitio](https://sebaromerox.github.io/carrera-munelocos)
-[Repositorio](https://github.com/SebaRomeroX/carrera-munelocos)
+[Live Demo](https://sebaromerox.github.io/carrera-munelocos)
+[Repository](https://github.com/SebaRomeroX/carrera-munelocos)
 
-**🎨 Estila Tu Texto**
-![Estila tu Texto](./img/estila_img.png)
-Herramienta para estilar, intuitiva y facil de usar.  
-Elige los estilos mientras ves los cambios en tiempo real.  
-Copialos y pegalos en tu proyecto.
+**🎨 Style Your Text**
+![Style Your Text](./img/estila_img.png)
+An intuitive and easy-to-use styling tool.
+Choose your styles while seeing changes in real time, then copy and paste the code directly into your project.
 
-**Tecnologías**
+**Techs**
 
 - React
 - Context API
 - CSS
 
-[Ir al Sitio](https://estilatutexto.netlify.app/)
-[Repositorio](https://github.com/SebaRomeroX/estila-tu-texto)
+[Live Demo](https://estilatutexto.netlify.app/)
+[Repository](https://github.com/SebaRomeroX/estila-tu-texto)
 
-**📱 enContacto**  
-![enContacto](./img/enContacto_img.png)  
-Gestion de salas de chat.  
-Administra distintas salas y a los usuarios que participaran en ellas.  
-"Tu equipo siempre enContacto"
+**📱 inTouch**  
+![inTouch](./img/enContacto_img.png)  
+Chat room management.
+Create and manage rooms, control user participation, and keep conversations organized.
+"Your team. Always. inTouch."
 
-**Tecnologías**
+**Techs**
 
 - React / TypeScript
 - Context API
 - React Router
 - CSS
 
-[Ir al Sitio](https://encontacto-demo.netlify.app/)
-[Repositorio](https://github.com/SebaRomeroX/EnContacto-Demo)
+[Live Demo](https://encontacto-demo.netlify.app/)
+[Repository](https://github.com/SebaRomeroX/EnContacto-Demo)
 
-### 📞 Contacto
+### 📞 Contact
 
-[LinkedIn](https://www.linkedin.com/in/sebastian-alejandro-romero/)
+[LinkedIn](https://www.linkedin.com/in/sebastian-romero-dev/)
