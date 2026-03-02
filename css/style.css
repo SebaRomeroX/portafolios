@@ -41,7 +41,7 @@ p {
 }
 
 
-/* -------------------- COLUMNA -------------------- */
+/* -------------------- PADDING -------------------- */
 .padding {
     padding: 0 1em;
     max-width: 600px;
@@ -119,6 +119,18 @@ p {
     border-radius: 50%;
 }
 
+.redes .boton {
+    margin: 0;
+    padding: .6em .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.redes span {
+    display: none;
+}
 
 /* -------------------- PROYECTOS -------------------- */
 
@@ -202,6 +214,15 @@ footer a {
     .presentacion figure {
         width: 200px;
         opacity: .9;
+    }
+
+    .redes span {
+        display: flex;
+        margin-left: .4em;
+    }
+    .redes .boton {
+        padding: .6em 1em;
+        font-size: 1em;
     }
 
     .proyecto figure {
